@@ -403,13 +403,19 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"seed.hodlcoin.fi", "seed.hodlcoin.com", ""};
+static const string mainnet_seeds[] = { "westcoast.hodlcoin.com",
+                                       "eastcoast.hodlcoin.com",
+                                       "europe.hodlcoin.com",
+                                       "asia.hodlcoin.com"
+                                       "seed.hodlcoin.fi",
+                                       "seed.hodlcoin.com",
+                                      };
 static const string testnet_seeds[] = {"", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("hodlseednode.amit.systems", 1989), true);
+    db.Add(CService("45.35.221.195", 1989), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
