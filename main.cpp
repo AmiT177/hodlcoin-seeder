@@ -406,7 +406,7 @@ extern "C" void* ThreadStats(void*) {
 static const string mainnet_seeds[] = { "westcoast.hodlcoin.com",
                                        "eastcoast.hodlcoin.com",
                                        "europe.hodlcoin.com",
-                                       "asia.hodlcoin.com"
+                                       "asia.hodlcoin.com",
                                        "seed.hodlcoin.fi",
                                        "seed.hodlcoin.com",
                                        "",
