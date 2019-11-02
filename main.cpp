@@ -409,6 +409,7 @@ static const string mainnet_seeds[] = { "westcoast.hodlcoin.com",
                                        "asia.hodlcoin.com"
                                        "seed.hodlcoin.fi",
                                        "seed.hodlcoin.com",
+                                       "",
                                       };
 static const string testnet_seeds[] = {"", ""};
 static const string *seeds = mainnet_seeds;
