@@ -469,7 +469,7 @@ int main(int argc, char **argv) {
       fTestNet = true;
   }
   if (!opts.ns) {
-    printf("No nameserver set. Not starting DNS server.\n");
+    printf("No nameserver set. Please use -n.\n");
     exit(1);
   }
   if (fDNS && !opts.host) {
