@@ -409,7 +409,7 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("45.43.13.115", 1989), true); #amit177 US node
+    db.Add(CService("45.43.13.115", 1989), true); //amit177 US node
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
@@ -470,7 +470,7 @@ int main(int argc, char **argv) {
   }
   if (!opts.ns) {
     printf("No nameserver set. Not starting DNS server.\n");
-    fDNS = false;
+    exit(1);
   }
   if (fDNS && !opts.host) {
     fprintf(stderr, "No hostname set. Please use -h.\n");
