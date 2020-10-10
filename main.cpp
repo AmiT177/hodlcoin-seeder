@@ -400,6 +400,8 @@ static const string mainnet_seeds[] = { "westcoast.hodlcoin.com",
                                        "asia.hodlcoin.com",
                                        "seed.hodlcoin.fi",
                                        "seed.hodlcoin.com",
+                                       "eu.hodlseed.amit.systems",
+                                       "us.hodlseed.amit.systems",
                                        "",
                                       };
 static const string testnet_seeds[] = {"", ""};
@@ -407,7 +409,7 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("45.35.221.195", 1989), true);
+    db.Add(CService("45.43.13.115", 1989), true); #amit177 US node
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
